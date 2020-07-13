@@ -1,0 +1,15 @@
+<center>
+  <article>
+    <!-- <h2><%= 'top.title'.t %> Credentials</h2> -->
+    <!-- <p><%= 'top.description'.t %></p> -->
+    <nav class="connect">
+      <ul>
+        <li><%= render 'connect/byoi/login_button' %></li>
+      </ul>
+    </nav>
+  </article>
+</center>
+
+<% content_for :javascript do %>
+  <%= javascript_include_tag 'sessions', 'data-turbolinks-track' => true %>
+<% end %>

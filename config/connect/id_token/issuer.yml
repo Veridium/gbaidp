@@ -1,0 +1,9 @@
+development: &defaults
+  issuer: http://localhost:3001
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults
+  issuer: https://intense-retreat-62302.herokuapp.com

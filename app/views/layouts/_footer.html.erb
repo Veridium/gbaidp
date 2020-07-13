@@ -1,0 +1,18 @@
+<footer class="page_footer">
+  <center>
+    <ul>
+      <li>
+        <%= link_to ENV["SITE_OWNER_NAME"], ENV["SITE_OWNER_URL"] %>
+      </li>
+      <li>
+        <%= ENV["SITE_PARENT_NAME"] %> (
+        <%= link_to 'Home Page', ENV["SITE_PARENT_URL"] %> /
+        <%= link_to 'Contacts', ENV["SITE_PARENT_URL"] %>
+        )
+      </li>
+      <li>
+        <small>&copy; <%= link_to ENV["SITE_DEV_NAME"], ENV["SITE_DEV_URL"] %></small>
+      </li>
+    </ul>
+  </center>
+</footer>
